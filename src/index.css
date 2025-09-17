@@ -1,0 +1,7 @@
+@import "tailwindcss";
+body    {
+    background-color: #282c34;
+}
+#hidden{
+    display:none
+}
