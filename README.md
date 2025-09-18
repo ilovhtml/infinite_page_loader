@@ -3,7 +3,7 @@
 A dynamic infinite scrolling web application built with React, allowing users to seamlessly browse an endless feed of popular memes fetched from a live API.
 
 ![[Arc_528v1RNrJP.gif]]
-<img src="https://github.com/ilovhtml/infinite_page_loader/blob/main/Arc_l2myvGKFN4.gif?raw=true"  >
+<img src="https://github.com/ilovhtml/infinite_page_loader/blob/main/Arc_528v1RNrJP.gif?raw=true" width="1350" height="680">
 
 This project was built to master advanced React concepts, particularly hooks like `useEffect`, `useRef`, and `useCallback` for creating performant, modern user experiences.
 ## Features
