@@ -1,12 +1,44 @@
-# React + Vite
+# Infinite Page Loader
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic infinite scrolling web application built with React, allowing users to seamlessly browse an endless feed of popular memes fetched from a live API.
 
-Currently, two official plugins are available:
+![[Arc_l2myvGKFN4.gif]]
+This project was built to master advanced React concepts, particularly hooks like `useEffect`, `useRef`, and `useCallback` for creating performant, modern user experiences.
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Infinite Scroll:** Memes load automatically as the user scrolls down the page, providing a seamless browsing experience. This is achieved using the modern `IntersectionObserver` API.
+    
+- **Live API Integration:** The application fetches data from the public `meme-api.com` REST API.
+    
+- **Loading State:** A clear "Loading..." indicator provides user feedback while new content is being fetched.
+    
+- **Responsive Design:** The gallery is fully responsive and looks great on all devices, thanks to a flexible grid layout built with Tailwind CSS.
+    
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React:** The entire front-end is built as a single-page application using React.
+    
+- **React Hooks:**
+    
+    - **`useState`:** For managing the array of images and the loading status.
+        
+    - **`useEffect`:** To trigger API calls and to set up the `IntersectionObserver`.
+        
+    - **`useRef`:** To get a direct reference to the "loader" element that acts as the trigger for the infinite scroll.
+        
+    - **`useCallback`:** To optimize the fetching logic and the observer's handler function.
+        
+- **Tailwind CSS:** For all styling, creating a clean, modern, and responsive user interface.
+    
+
+### How to Use This Project
+
+1. Clone the repository.
+    
+2. Run `npm install`.
+    
+3. Run `npm run dev`.
+    
+
+_This project is a demonstration of my ability to build a feature-rich front-end application with React and implement advanced features like infinite scrolling._
